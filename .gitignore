@@ -1,0 +1,11 @@
+/src/
+/pkg/
+/*.pkg.tar.*
+/*.src.tar.*
+/wps-office_*.deb
+/freetype-*.tar.xz
+/freetype-*.tar.xz.sig
+/0000-WPS-compatiblity.patch
+/0001-Enable-table-validation-modules.patch
+/0002-Enable-subpixel-rendering.patch
+/0003-Enable-long-PCF-family-names.patch

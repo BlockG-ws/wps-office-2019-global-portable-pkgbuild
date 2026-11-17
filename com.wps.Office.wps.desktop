@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=WPS Writer
+Name[zh_CN]=WPS 文字
+GenericName=WPS Writer
+GenericName[zh_CN]=WPS 文字
+Comment=Kingsoft Office suite
+Exec=env PORTABLE_CONF=com.wps.Office portable --forward-file -- wps %U
+TryExec=portable
+Icon=wps-office2019-wpsmain
+Type=Application
+Categories=Office;WordProcessor;Qt;
+StartupWMClass=wps
+StartupNotify=true
+Terminal=false
+MimeType=application/wps-office.wps;application/wps-office.wpt;application/wps-office.wpso;application/wps-office.wpss;application/wps-office.doc;application/wps-office.dot;application/vnd.ms-word;application/msword;application/x-msword;application/msword-template;application/wps-office.docx;application/wps-office.dotx;application/rtf;application/vnd.ms-word.document.macroEnabled.12;application/vnd.openxmlformats-officedocument.wordprocessingml.document;x-scheme-handler/ksoqing;x-scheme-handler/ksowps;x-scheme-handler/ksowpp;x-scheme-handler/ksoet;x-scheme-handler/ksowpscloudsvr;x-scheme-handler/ksowebstartupwps;x-scheme-handler/ksowebstartupet;x-scheme-handler/ksowebstartupwpp;application/wps-office.uot;

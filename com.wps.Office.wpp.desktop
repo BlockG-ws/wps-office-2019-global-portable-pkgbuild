@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=WPS Presentation
+Name[zh_CN]=WPS 演示
+GenericName=WPS Presentation
+GenericName[zh_CN]=WPS 演示
+Comment=Kingsoft Office suite
+Exec=env PORTABLE_CONF=com.wps.Office portable --forward-file -- wpp %F
+TryExec=portable
+Icon=wps-office2019-wppmain
+Type=Application
+Categories=Office;Presentation;Qt;
+StartupWMClass=wpp
+StartupNotify=true
+Terminal=false
+MimeType=application/wps-office.dps;application/wps-office.dpt;application/wps-office.dpss;application/wps-office.dpso;application/wps-office.ppt;application/wps-office.pot;application/vnd.ms-powerpoint;application/vnd.mspowerpoint;application/mspowerpoint;application/powerpoint;application/x-mspowerpoint;application/wps-office.pptx;application/wps-office.potx;application/vnd.openxmlformats-officedocument.presentationml.presentation;application/vnd.openxmlformats-officedocument.presentationml.slideshow;application/wps-office.uop;

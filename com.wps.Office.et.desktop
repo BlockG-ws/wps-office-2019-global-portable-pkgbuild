@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=WPS Spreadsheets
+Name[zh_CN]=WPS 表格
+GenericName=WPS Spreadsheets
+GenericName[zh_CN]=WPS 表格
+Comment=Kingsoft Office suite
+Exec=env PORTABLE_CONF=com.wps.Office portable --forward-file -- et %F
+TryExec=portable
+Icon=wps-office2019-etmain
+Type=Application
+Categories=Office;Spreadsheet;Qt;
+StartupWMClass=et
+StartupNotify=true
+Terminal=false
+MimeType=application/wps-office.et;application/wps-office.ett;application/wps-office.ets;application/wps-office.eto;application/wps-office.xls;application/wps-office.xlt;application/vnd.ms-excel;application/msexcel;application/x-msexcel;application/wps-office.xlsx;application/wps-office.xltx;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/wps-office.uos;

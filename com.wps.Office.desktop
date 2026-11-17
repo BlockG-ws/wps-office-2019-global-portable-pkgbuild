@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=WPS Office
+Name[zh_CN]=WPS Office
+GenericName=WPS
+GenericName[zh_CN]=WPS 2019
+Comment=Kingsoft Office suite
+Exec=env PORTABLE_CONF=com.wps.Office portable --forward-file -- wps %U
+TryExec=portable
+Icon=wps-office2019-kprometheus
+Type=Application
+Categories=Office;WordProcessor;Qt;
+StartupWMClass=wpsoffice
+StartupNotify=true
+Terminal=false

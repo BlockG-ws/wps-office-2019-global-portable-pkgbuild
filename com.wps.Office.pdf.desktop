@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=WPS PDF
+Name[zh_CN]=WPS PDF
+GenericName=Kingsoft Pdf Reader
+GenericName[zh_CN]=WPS PDF
+Comment=Kingsoft Office suite
+Exec=env PORTABLE_CONF=com.wps.Office portable --forward-file -- wpspdf %F
+TryExec=portable
+Icon=wps-office2019-pdfmain
+Type=Application
+Categories=Office;WordProcessor;Qt;
+StartupWMClass=wpspdf
+StartupNotify=true
+Terminal=false
+MimeType=application/pdf

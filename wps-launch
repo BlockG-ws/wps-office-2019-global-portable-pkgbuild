@@ -1,0 +1,27 @@
+#!/bin/bash
+# Entry point run inside the Portable sandbox.
+#
+# The first argument selects the application (supplied by the .desktop
+# entries), anything else is handed to WPS.  Without a selector the whole
+# suite starts.
+
+PROGS="wps et wpp wpspdf"
+prog=wps
+
+for p in ${PROGS}; do
+	if [ "$1" = "${p}" ]; then
+		prog=$1
+		shift
+		break
+	fi
+done
+
+# WPS ships its own Qt 5.12 build (libQt5*Kso.so) and its plugins.
+export QT_PLUGIN_PATH=/opt/kingsoft/wps-office/office6/qt/plugins
+
+# ... of which only the xcb platform plugin exists
+export QT_QPA_PLATFORM=xcb
+
+# The deb's launchers are Bash scripts, they pick up office6 next to
+# themselves and handle templates and cloud URLs.
+exec "/opt/kingsoft/wps-office/${prog}" "$@"

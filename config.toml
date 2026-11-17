@@ -1,0 +1,40 @@
+# Portable sandbox configuration for WPS Office
+# Repackaged from the Flathub manifest (com.wps.Office)
+
+[metadata]
+sandbox_id = "com.wps.Office"
+display_name = "WPSOffice"
+state_directory = "WPS_Office_Data"
+
+[exec]
+target = "bash"
+arguments = ["/usr/lib/portable/info/com.wps.Office/launch"]
+
+[processes]
+track = true
+
+[system]
+allow_inhibit = false
+conduct_inhibit = false
+uclamp_max = 100
+device_allow = []
+
+[network]
+enable = false
+
+[privacy]
+x11_compat = true
+classic_notif = false
+
+[privacy.lockdown_options]
+seccomp_whitelist = false
+landlock = false
+
+[advanced]
+use_zink = false
+qt5_compat = false
+mpris_names = []
+tray_wake = false
+allow_kde_status = true
+flatpak_env = false
+allow_debug = false
